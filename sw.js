@@ -1,2 +1,2 @@
 ‘use strict’;
-importScripts(‘sw-toolbox.js’); toolbox.precache([“index.html”,”style/style.css”]);
+importScripts(‘sw-toolbox.js’); toolbox.precache([“index.html”,”pages/index.css”, ”pages/flashlight.css”, ”pages/flashlight__button.css”]); toolbox.router.get(‘/images/*’, toolbox.cacheFirst); toolbox.router.get(‘/*’, toolbox.networkFirst, { networkTimeoutSeconds: 5});
